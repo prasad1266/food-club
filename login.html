@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        text-align: center;
+       
+       
+    }
+    .cred{
+       display: grid; 
+       grid-auto-rows: auto;
+       gap: 10px;
+       width: 40%;
+       margin: 0 auto;
+       border :none
+    }
+    .cred img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+        height: 180px;
+       
+    }
+    #btn{
+        display: flex;
+        justify-content: space-around;
+       
+
+    }
+    #btn button{
+      height: 40px;
+      width: 170px;
+      border-radius: 17px;
+      border: none;
+      color: white;
+      background-color: blue;
+      margin-left: 50px;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 16px;
+    }
+    #btn a{
+      margin-top: 12px;
+      text-decoration: none;
+      font-size: medium;
+      color: blue;
+    }
+    .line {
+       margin-left: 30%;
+            border-bottom: 2px solid gray;
+            margin-top: 30px;
+            width: 40%;
+        }
+        .footer{
+            margin-top: 10px;
+            display: grid;
+            gap: 20px;
+         
+        }
+        .footer a{
+            text-decoration: none;
+            color: blue;
+        }
+   
+</style>
+<body>
+    <div class="container">
+        <h4>You need to sign in or sign up before continuing.</h4>
+
+<div class="cred">
+   <img src="https://play-lh.googleusercontent.com/E0KtO51f9hEjsz4WDIoo1hvFFLQS4Fkvk5RAsHPM2MDZNRXo8uwoDpn-HudZB9qUEGw">
+    <input id="mail" type="text" placeholder="Email">
+    <input id="pass" type="text" placeholder="Password">
+    
+    <div id="btn">
+        <button id="login"> LOGIN </button>
+        <a href="" >FORGOT PASSWORD?</a>
+    </div>
+</div>
+<div class="line"></div>
+<div class="footer">
+<a href="">SIGN IN WITH FACEBOOK</a>
+<a href="">CREATE NEW ACCOUNT</a>
+</div>
+  </div>
+</body>
+<script>
+    let mail=document.getElementById("mail").value;
+    let password=document.getElementById("pass");
+    let login=document.getElementById("login");
+    login.addEventListener("click", abc);
+    function abc(){
+        if(password.value=="1234"){
+            alert("Login Successfull");
+        }
+        else{
+            alert("Password didn't Matched");
+        }
+    }
+
+</script>
+</html>
