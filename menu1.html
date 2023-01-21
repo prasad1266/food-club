@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><Menu></Menu></title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+          text-align: center;
+margin-top: 10px;
+
+        }
+        .container > div{
+            /* border: solid red 2px; */
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        }
+        .container img{
+           
+            width: 250px;
+        }
+        .container button{
+          border-radius: 3px;
+          color:white;
+          background-color: rgb(90, 111, 233);
+          border: none;
+padding: 5px;
+margin-bottom: 10px;
+
+        } 
+        .nav {
+    background-color:white;
+    overflow: hidden;
+    /* position: fixed; */
+    /* top: 0; */
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    margin: none;
+    padding: none;
+    
+  }
+  /* .nav img{
+   box-sizing: border-box; 
+ } */
+  .nav button{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height:90%;
+    width: 230px;
+    border: none;
+    
+  }
+  
+  /* Style the links inside the navigation bar */
+  .nav a {
+   
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .nav a.active {
+
+    background-color: white;
+    color: brown;
+ 
+  }
+  .footer{
+  display: flex;
+  width: 100%;
+  height: 450px;
+  background-color: #00008B;
+ 
+}
+.fst{
+  display: flex;
+ width: 50%;
+ border-color:solid red 2px;
+  
+}
+
+#one{
+  margin-top: 30px;
+  width: 50%;
+display: grid;
+justify-content: space-around;
+gap: 15px;
+
+}
+#one a{
+  font-style: italic;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+#two{
+  margin-top: 30px;
+  width: 50%;
+display: grid;
+justify-content: space-around;
+gap: 15px;
+
+}
+#two a{
+  font-style: italic;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+
+.scnd{
+  width: 50%;
+ display: block;
+ margin-top: 100px;
+ color: white;
+ font-weight: bold;
+ font-style:oblique;
+ margin-left: 300px;
+}
+.scnd h2{
+ margin-bottom: 10px;
+}
+.scnd p{
+color: white;
+ margin-bottom: 15px;
+}
+.scnd >div{
+  display: flex;
+}
+
+.scnd >div img{
+  width: 110px;
+  margin-left: 5px;
+  margin-top: 20px;
+}
+.scl {
+ display: flex;
+ height: 40px;
+ width: 40px;
+ gap: 10px;
+}
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <a class="active"  onclick="toggleMenu()"> ≡ </a>
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrYhoNCPbH6T8SVTlt0Y1d6psfnbzFvVyWMg&usqp=CAU">
+       
+        <button>OREDR NOW</button>
+    </div>
+    <ul id="menu-box" >
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="menu.html">OUR FOOD </a></li>
+        <li><a href="pictures.html">CATERING</a></li>
+        <li><a href="pictures.html">LOCO REWARDS</a></li>
+        <li><a href="pictures.html">GIFT CARDS</a></li>
+        <li><a href="pictures.html">OUR STORY</a></li>
+        <li><a href="pictures.html">CAREERS</a></li>
+        <li><a href="pictures.html">FRANCHISING</a></li>
+      </ul>
+    <div class="container">
+
+    </div>
+    <div class="footer">
+
+        <div class="fst">
+<div id="one">
+    <a href="home.html">HOME</a>
+    <a href="home.html">CATERING</a>
+    <a href="home.html">GIFT CARDS</a>
+    <a href="home.html">Fundraisers & Charities</a>
+    <a href="home.html">Careers</a> 
+    <div class="scl">
+            
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTtTPwBuY15gVsSKAxAdC7qTjcbL9KWyFkaA&usqp=CAU" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9CaXxU6kmQw9CIAOKObHGD3o6nT70m4ZIgg&usqp=CAU" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRotQk5DK3aeBEELNn3Qd31ZGMnCorBDk2vnA&usqp=CAU" alt="">
+      </div>
+</div>
+<div id="two">
+    <a href="home.html">Franchising</a>
+    <a href="home.html">Investors</a>
+    <a href="home.html">Press Releases</a>
+    <a href="home.html">Contact Us</a>
+    <a href="home.html">Feedback</a>
+
+</div>
+
+        </div>
+        <div class="scnd">
+  <h2>Join Loco Rewards</h2>
+  <p>Earn points with every order, receive a birthday
+     reward and other valuable offers throughout the
+      year. Plus, special app features to order ahead, pay,
+       and save your favorites.</p>
+  <a href="home.html">Learn More</a>
+  <div>
+    <img src="https://www.elpolloloco.com/content/img/download-button-app-store.webp" alt="">
+    <img src="https://www.elpolloloco.com/content/img/download-button-google.webp" alt="">
+  </div>
+        </div>
+      
+      </div>
+</body>
+<script>
+ function fetchData()
+ {
+    fetch ("https://63cbd6aeea855154151661b6.mockapi.io/product").then((res)=>
+        res.json()
+        
+    )
+    .then(res =>{
+        console.log(res);
+        displayProduct(res)
+    })
+
+
+}
+fetchData()
+let container=document.getElementsByClassName("container")
+console.log(container);
+function displayProduct(res){
+    res.forEach((element) => {
+        console.log(element);
+        let card=document.createElement("div")
+    let image=document.createElement("img")
+    let name=document.createElement("h2")
+    let  category=document.createElement("p")
+    let price=document.createElement("p")
+    let add_to_cart=document.createElement("button")
+    add_to_cart.onclick=function(){
+let zz=localStorage.getItem("add_to_cart")?
+JSON.parse(localStorage.getItem("add_to_cart")):[];
+      
+console.log(element);
+      zz=[element, ...zz]
+    //   console.log(zz);
+     localStorage.setItem("add_to_cart",JSON.stringify(zz))
+    //   console.log(res);
+    }
+
+add_to_cart.innerHTML="Add to cart";
+    image.src=element.image;
+    name.textContent=element.name;
+    category.textContent=element.category;
+    price.textContent=element.price;
+
+    card.append(image,name,category,price,add_to_cart)
+    
+    container[0].append(card)
+    
+    })
+  
+
+}
+
+
+
+</script>
+</html>
+

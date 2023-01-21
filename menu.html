@@ -27,20 +27,22 @@
         <li><a href="pictures.html">FRANCHISING</a></li>
       </ul>
 
-      <div class="first">
+      <div class="first" onclick="">
 <img src="https://www.shutterstock.com/image-photo/background-cooking-tagliatelle-pasta-ingredients-600w-1724611486.jpg" alt="">
       </div>
       <div class="second">
         <div>
             <h1>FIRE-GRILLED COMBOS</h1>
             <P>At participating restaurants for a limited time only.</P>
-            <button >TRY ALL 4!</button>
+            <button ><a href="menu.html">TRY ALL 4!</a></button>
         </div>
-        <div><img src="https://www.elpolloloco.com/content/img/menu/M4-PolloBowlChickQuesCombo-Banner-934x770.webp" alt=""></div>
+        <div onclick="">
+            <img src="https://www.elpolloloco.com/content/img/menu/M4-PolloBowlChickQuesCombo-Banner-934x770.webp" alt=""></div>
         
               </div>
               <div class="third">
-<div><img src="https://www.elpolloloco.com/content/img/menu/menu-burritos_1280.webp" alt="">
+<div onclick="click()" >
+    <img onclick="click()" src="https://www.elpolloloco.com/content/img/menu/menu-burritos_1280.webp" alt="">
 <h1>BURRITOS</h1></div>
 <div><img src="https://www.elpolloloco.com/content/img/menu/menu-family-dinners_1280.webp" alt="">
     <h1>FAMILY DINNERS</h1></div>
@@ -63,11 +65,21 @@
               </div>
               <div class="fourth">
 <img src="https://www.elpolloloco.com/content/img/catering_1280.webp" alt="">
+<div class="text">
+    <h2>ADD POLLO TO YOUR PARTY</h2>
+    <p>Our famous fire-grilled chicken is a tradition worth sharing. Bring your guests together over pollo and enjoy like family.</p>
+    <button id="frthbtn"> VIEW CATERING </button>
+</div>
               </div>
 
               <div class="fifth">
                 <img src="https://www.elpolloloco.com/content/img/order-now_1280.webp" alt="">
+                <div class="text">
+                    <h2>Perfect pollo is just a click away.</h2>
+                    <p>Order online for quick pick up or delivery where available.</p>
+                    <button id="fifthbtn"> OREDR NOW</button>
                               </div>
+                            </div>
                 <div class="sixth">
 <div id="onee">
 <h1>LOCO REWARDS</h1>
@@ -80,7 +92,7 @@
     <img src="https://www.elpolloloco.com/content/img/phone-768-01.webp" alt="">
 </div>
                 </div>
-                <div class="footer">
+                <div href=menu1.html class="footer">
 
                     <div class="fst">
             <div id="one">
@@ -122,4 +134,12 @@
                   </div>
 
 </body>
+<script>
+    
+    function click(){
+        console.log("prasad");
+        window.location.href('menu1.html');
+        
+    }
+</script>
 </html>
