@@ -1,0 +1,208 @@
+.nav {
+    background-color:white;
+    overflow: hidden;
+  position: sticky;
+    /* position: fixed; */
+    /* top: 0; */
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    margin: none;
+    padding: none;
+    
+  }
+  * {box-sizing:border-box}
+  
+  .nav button{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height:90%;
+    width: 230px;
+    border: none;
+    
+  }
+  
+  /* Style the links inside the navigation bar */
+  .nav a {
+   
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .nav a.active {
+
+    background-color: white;
+    color: brown;
+ 
+  }
+  .first{
+    display: block;
+    max-width: 100%;
+  }
+  .second{
+    box-sizing:border-box;
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  .second > div:nth-child(1){
+   padding-left: 90px;
+  }
+  .second >div> button{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 9px;
+    
+  }
+  .second >div> img{
+    /* box-sizing:border-box; */
+    margin-left: 150px;
+   
+  }
+  .third{
+     box-sizing:border-box;
+     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 7px;
+  }
+  .third h1{
+    text-align: center;
+   color: brown;
+   font-style: italic;
+   font-family:'Times New Roman', Times, serif;
+
+  }
+  .third >div> img{
+    width: 100%;
+  }
+  .fourth img{
+    width: 100%;
+  }
+  .fifth img{
+    width: 100%;
+  }
+  .sixth{
+    display: flex;
+    width: 100%;
+  }
+  #one , two{
+    width: 50%;
+  }
+  #two img{
+    height: 70%;
+    /* border: solid red 2px; */
+   margin-top: 200px ;
+   margin-left: 200px;
+  }
+  #onee{
+    text-align: center;
+    margin-top: 38%;
+  }
+  #onee h1{
+   
+    color:red;
+    font-weight: bolder;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  #onee p{
+    color: black;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+font-size: large;
+  }
+  #onee button{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 15px;
+
+  }
+  .footer{
+    display: flex;
+    width: 100%;
+    height: 450px;
+    background-color: #00008B;
+   
+  }
+  .fst{
+    display: flex;
+   width: 50%;
+   border-color:solid red 2px;
+    
+  }
+  
+  #one{
+    margin-top: 30px;
+    width: 50%;
+  display: grid;
+  justify-content: space-around;
+  gap: 15px;
+  
+  }
+  #one a{
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+  }
+  #two{
+    margin-top: 30px;
+    width: 50%;
+  display: grid;
+  justify-content: space-around;
+  gap: 15px;
+  
+  }
+  #two a{
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+  }
+  
+  
+  .scnd{
+    width: 50%;
+   display: block;
+   margin-top: 100px;
+   color: white;
+   font-weight: bold;
+   font-style:oblique;
+   margin-left: 300px;
+  }
+  .scnd h2{
+   margin-bottom: 10px;
+  }
+  .scnd p{
+  color: white;
+   margin-bottom: 15px;
+  }
+  .scnd >div{
+    display: flex;
+  }
+  
+  .scnd >div img{
+    width: 110px;
+    margin-left: 5px;
+    margin-top: 20px;
+  }
+  .scl {
+   display: flex;
+   height: 40px;
+   width: 40px;
+   gap: 10px;
+  }
