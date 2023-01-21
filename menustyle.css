@@ -11,6 +11,10 @@
     padding: none;
     
   }
+  body{
+    overflow-x:hidden;
+  }
+
   * {box-sizing:border-box}
   
   .nav button{
@@ -53,6 +57,10 @@
   .second > div:nth-child(1){
    padding-left: 90px;
   }
+  .second > div:nth-child(2){
+    
+    display: block;
+   }
   .second >div> button{
     background-color: blue;
     color: white;
@@ -63,6 +71,16 @@
     border: none;
     border-radius: 9px;
     
+    
+  }
+  .second >div> button a{
+    text-decoration: none;
+    color: white;
+  }
+  .second >div> button a:hover{
+    color: white;
+    background-color: blue;
+    
   }
   .second >div> img{
     /* box-sizing:border-box; */
@@ -71,11 +89,16 @@
   }
   .third{
      box-sizing:border-box;
-     width: 100%;
+     width: 95%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 7px;
+    
   }
+  .third >div{
+  
+  }
+  
   .third h1{
     text-align: center;
    color: brown;
@@ -86,6 +109,64 @@
   .third >div> img{
     width: 100%;
   }
+  .fourth{
+    position: relative;
+
+  }
+  .fifth{
+    position: relative;
+
+  }
+  .text{
+    width: 400px;
+    position: absolute;
+    bottom:50%;
+    right: 36%;
+    background-color: none;
+   
+    /* padding-left: 20px;
+    padding-right: 20px; */
+    text-align: center;
+  }
+ .text h2{
+    font-weight: bolder;
+    height: 25px;
+    color:red;
+   font-style: oblique;
+  }
+  .text p{
+    font-weight: bold;
+    height: 25px;
+    color:black;
+   font-style: oblique;
+  }
+  .text button{
+    margin-top: 15px;
+    font-weight:900;
+    padding: 5px;
+    height: 42px;
+    width: 230px;
+    border-radius: 15px;
+    color: white;
+    background-color:rgb(65, 65, 241);
+   font-style:inherit;
+   border:none;
+  }
+  .fifth>.text{
+    width: 400px;
+    position: absolute;
+    bottom: 80%;
+    right: 26%;
+    background-color: none;
+   
+    /* padding-left: 20px;
+    padding-right: 20px; */
+    text-align: center;
+  }
+  button :hover {
+   background-color:red;
+  }
+  
   .fourth img{
     width: 100%;
   }
