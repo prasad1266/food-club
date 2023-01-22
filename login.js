@@ -8,6 +8,10 @@ function abc(){
         alert("Login Successfull");
         window.location.href="home.html";
     }
+    if(password.value=="admin"){
+        alert("Login Successfull");
+        window.location.href="admin.html";
+    }
     else{
         alert("Password didn't Matched");
     }
