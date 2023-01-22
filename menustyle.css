@@ -45,7 +45,8 @@
  
   }
   .first{
-    display: block;
+    /* display:; */
+    
     max-width: 100%;
   }
   .second{
@@ -117,6 +118,33 @@
     position: relative;
 
   }
+  .first > .text{
+    /* border: solid red 2px; */
+      width: 400px;
+      position: absolute;
+      /* bottom: 25%; */
+      top: 65%;
+      right: 10%;
+      background-color: none;
+     
+      /* padding-left: 20px;
+      padding-right: 20px; */
+      text-align: center;
+    }
+  .fifth > .text{
+    /* border: solid red 2px; */
+      width: 400px;
+      position: absolute;
+      /* bottom: 25%; */
+      top: 30%;
+      right: 36%;
+      background-color: none;
+     
+      /* padding-left: 20px;
+      padding-right: 20px; */
+      text-align: center;
+    }
+  
   .text{
     width: 400px;
     position: absolute;
@@ -127,6 +155,12 @@
     /* padding-left: 20px;
     padding-right: 20px; */
     text-align: center;
+  }
+  .text h1{
+    font-weight: bolder;
+    height: 25px;
+    color:red;
+   font-style: oblique;
   }
  .text h2{
     font-weight: bolder;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><Menu></Menu></title>
+    <title>Food Menu</title>
     <style>
         .container{
             display: grid;
@@ -157,7 +157,7 @@ color: white;
         <a class="active"  onclick="toggleMenu()"> ≡ </a>
        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrYhoNCPbH6T8SVTlt0Y1d6psfnbzFvVyWMg&usqp=CAU">
        
-        <button>OREDR NOW</button>
+        <button><a href="cart.html">OREDR NOW</a></button>
     </div>
     <ul id="menu-box" >
         <li><a href="home.html">HOME</a></li>
@@ -214,6 +214,20 @@ color: white;
       </div>
 </body>
 <script>
+
+function toggleMenu() {
+  var menuBox = document.getElementById('menu-box');   
+  if(menuBox.style.display == "block") { // if is menuBox displayed, hide it
+    menuBox.style.display = "none";
+    
+  }
+  else { // if is menuBox hidden, display it
+    menuBox.style.display = "block";
+    
+  }
+}
+
+
  function fetchData()
  {
     fetch ("https://63cbd6aeea855154151661b6.mockapi.io/product").then((res)=>

@@ -193,6 +193,18 @@
 
         <button>OREDR NOW</button>
     </div>
+
+    <ul id="menu-box" >
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="menu.html">OUR FOOD </a></li>
+        <li><a href="menu1.html">CATERING</a></li>
+        <li><a href="pictures.html">LOCO REWARDS</a></li>
+        <li><a href="pictures.html">GIFT CARDS</a></li>
+        <li><a href="pictures.html">OUR STORY</a></li>
+        <li><a href="pictures.html">CAREERS</a></li>
+        <li><a href="pictures.html">FRANCHISING</a></li>
+      </ul>
+
     <div id="order-container" class="order-container">
 
     </div>
@@ -254,6 +266,19 @@
 </body>
 <script>
 
+function toggleMenu() {
+  var menuBox = document.getElementById('menu-box');   
+  if(menuBox.style.display == "block") { // if is menuBox displayed, hide it
+    menuBox.style.display = "none";
+    
+  }
+  else { // if is menuBox hidden, display it
+    menuBox.style.display = "block";
+    
+  }
+}
+
+
     let container = document.getElementById("order-container")
 let tp=document.getElementsByClassName("tp")[0]
 let data = JSON.parse(localStorage.getItem("add_to_cart")) || []
@@ -269,13 +294,18 @@ let data = JSON.parse(localStorage.getItem("add_to_cart")) || []
             let name = document.createElement("h2")
             let category = document.createElement("p")
             let price = document.createElement("p")
+            let Remove=document.createElement("button")
+            Remove.innerHTML="Remove";
+            Remove.onclick=function(){
+                localStorage.removeItem("card");
+            }
            
             image.src = element.image;
             name.textContent = element.name;
             category.textContent = element.category;
             price.textContent = element.price;
 
-            card.append(image, name, category, price)
+            card.append(image, name, category, price,Remove)
 
             container.append(card)
 
